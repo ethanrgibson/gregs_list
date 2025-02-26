@@ -69,6 +69,33 @@ class ObservableAppState extends EventEmitter {
       description: 'mostly old, fairly smelly, and really liveable (for the most part)',
       imgUrl: 'https://i0.wp.com/www.terrain.org/wp-content/uploads/2012/12/ruins_livingstone_house.jpg?resize=400,316&ssl=1'
     }),
+    new House({
+
+      year: 2025,
+      bedrooms: 2,
+      bathrooms: 1,
+      sqft: 45000,
+      price: 1000000,
+      description: 'So. Fresh. Forever',
+      imgUrl: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZXJuJTIwaG91c2V8ZW58MHx8MHx8fDI%3D'
+    }),
+    new House({
+
+      year: 2024,
+      bedrooms: 0.5,
+      bathrooms: 0.5,
+      sqft: 6,
+      price: 375,
+      description: 'Cardboard box, decent condition',
+      imgUrl: 'https://images.unsplash.com/photo-1573376670329-0261ea9fde97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHVnZWNhcmRib2FyZCUyMGJveHxlbnwwfHwwfHx8Mg%3D%3D'
+    }),
+
+
+
+
+
+
+
   ]
 }
 

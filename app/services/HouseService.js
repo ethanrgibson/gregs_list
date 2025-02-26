@@ -19,7 +19,9 @@ class HouseService {
   deleteHouse(houseId) {
     const house = AppState.houses
 
+    const houseIndex = house.findIndex(house => house.id == houseId)
 
+    house.splice(houseIndex, 1)
 
 
 

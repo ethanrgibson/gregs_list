@@ -48,6 +48,8 @@ export class HousesController {
 
   deleteHouseListing(houseId) {
 
+
+    console.log('im here, deleting houses')
     const confirm = window.confirm('Sure You Wanna Sell?')
 
     if (!confirm) {
