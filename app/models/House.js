@@ -56,7 +56,13 @@ export class House {
               </div>
             </div>
           </div>
+          <div class="text-end">
+              <button onclick="" class="btn btn-outline-danger" type="button">
+                Sell House
+              </button>
+            </div>
         </div>
+
 `;
   }
 

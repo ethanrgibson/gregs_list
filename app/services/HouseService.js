@@ -16,6 +16,14 @@ class HouseService {
   }
 
 
+  deleteHouse(houseId) {
+    const house = AppState.houses
+
+
+
+
+
+  }
 
 
 }

@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js"
+import { carsService } from "../services/CarsService.js"
 import { houseService } from "../services/HouseService.js"
 import { getFormData } from "../utils/FormHandler.js"
 
@@ -42,9 +43,20 @@ export class HousesController {
     // @ts-ignore
     form.reset()
 
+  }
+
+
+  deleteHouseListing(houseId) {
+
+    const confirm = window.confirm('Sure You Wanna Sell?')
+
+    if (!confirm) {
+      return
+    }
+
+    houseService.deleteHouse(houseId)
 
 
   }
-
 
 }
