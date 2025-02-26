@@ -91,12 +91,13 @@ export class Car {
 
 export class House {
   /**
-   * @param {{ year: number; 
+   * @param {{ 
+   * year: number; 
    * bedrooms: number; 
    * bathrooms: number; 
    * sqft: number; 
    * price: number; 
-   * description: string; i
+   * description: string;
    * imgUrl: string; }} data
    */
   constructor(data) {
