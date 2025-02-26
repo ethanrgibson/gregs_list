@@ -39,10 +39,12 @@ export class HousesController {
     houseService.newHouse(houseData)
 
 
-    console.log(houseData)
+    // @ts-ignore
+    form.reset()
+
+
+
   }
-
-
 
 
 }
