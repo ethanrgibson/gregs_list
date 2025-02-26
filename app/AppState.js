@@ -57,13 +57,14 @@ class ObservableAppState extends EventEmitter {
 
 
   houses = [
+
     new House({
 
       year: 1900,
       bedrooms: 6,
       bathrooms: 10,
-      sqft: 45,
-      price: 100000,
+      sqft: 4500,
+      price: 375000,
       description: 'mostly old, fairly smelly, and really liveable (for the most part)',
       imgUrl: 'https://i0.wp.com/www.terrain.org/wp-content/uploads/2012/12/ruins_livingstone_house.jpg?resize=400,316&ssl=1'
     }),
