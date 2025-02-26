@@ -25,6 +25,14 @@ export class House {
   }
 
 
+  get currencyForPrice() {
+
+    const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(this.price)
+
+    return currency
+
+  }
+
   get houseCardTemplate() {
 
     return `
@@ -35,11 +43,11 @@ export class House {
               src="${this.imgUrl}"
               alt="${this.year} ${this.sqft}" class="car-img">
             <div class="p-3 flex-grow-1">
-              <h3>Built: ${this.year}/ SQFT: ${this.sqft} </h3>
+              <h3>Built: ${this.year} / SQFT: ${this.sqft} </h3>
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="fs-3">${this.price}/p>
-                  <p>${this.description}.</p>
+                  <p class="fs-3">${this.currencyForPrice} </p>
+                  <p class="text-capitalize" >${this.description}.</p>
                 </div>
                 <div class="fs-5">
                   <p>${this.bedrooms} Bedrooms</p>

@@ -144,6 +144,69 @@
       </div>
     </section>
     <section class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h3>List Your House</h3>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow bg-light px-5 py-2">
+            <form onsubmit="app.housesController.createHouseListing()">
+              <div class="mb-3">
+                <label for="houseYear">House Age</label>
+                <input id="houseYear" name="year" type="text" required minlength="3" maxlength="20"
+                  placeholder="Year House Was Built...">
+              </div>
+              <div class="mb-3">
+                <label for="howManyBedrooms">Bedrooms</label>
+                <input id="howManyBedrooms" name="bedrooms" type="number" required maxlength="20"
+                  placeholder="How many bedrooms...">
+              </div>
+              <div class="mb-3">
+                <label for="howManyBathrooms">Bathrooms</label>
+                <input id="howManyBathrooms" name="bathrooms" type="number" required maxlength="20"
+                  placeholder="How many bathrooms...">
+              </div>
+              <div class="mb-3">
+                <label for="sqftAmount">Square Footage</label>
+                <input id="sqftAmount" name="sqft" type="number" required minlength="3" maxlength="20"
+                  placeholder="Total square footage...">
+              </div>
+              <div class="mb-3">
+                <label for="price">List Price</label>
+                <input id="price" name="price" type="number" required minlength="3" maxlength="20"
+                  placeholder="I want to sell my house for $...">
+              </div>
+              <div class="mb-3">
+                <label for="description">Describe your house</label>
+                <input id="description" name="description" type="text" required minlength="3" maxlength="500"
+                  placeholder="My house smells...">
+              </div>
+              <div class="mb-3">
+                <label for="houseImgURL">Provide an image of your house</label>
+                <input id="houseImgURL" name="imgUrl" type="text" required minlength="3" maxlength="1000"
+                  placeholder="Image URL...">
+              </div>
+              <!-- NOTE you will need a button element inside of your form that we can use to submit the form -->
+              <div class="text-end">
+                <button class="btn btn-outline-danger me-2" type="reset">
+                  Reset Form
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1679513217830-2cb2fdf6f274?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJ1biUyMGRvd24lMjBjYWJpbnxlbnwwfHwwfHx8Mg%3D%3D"
+            alt="Cabin in the woods" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
       <div id="houseCards" class="row">
         <!-- STUB House Card -->
         <!-- <div class="col-md-12">
@@ -167,10 +230,9 @@
           </div>
         </div> -->
       </div>
-
-
       </div>
     </section>
+
 
   </main>
 
