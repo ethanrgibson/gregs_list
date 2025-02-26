@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js"
 import { House } from "../models/House.js"
+import { loadState, saveState } from "../utils/Store.js"
 
 class HouseService {
 
@@ -23,7 +24,17 @@ class HouseService {
 
     house.splice(houseIndex, 1)
 
+  }
 
+  saveHouses() {
+
+    saveState('houses', AppState.houses)
+
+  }
+
+  loadHouse() {
+
+    const loadHouses = loadState('houses', [House])
 
   }
 

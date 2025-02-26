@@ -90,12 +90,6 @@ class ObservableAppState extends EventEmitter {
       imgUrl: 'https://images.unsplash.com/photo-1573376670329-0261ea9fde97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHVnZWNhcmRib2FyZCUyMGJveHxlbnwwfHwwfHx8Mg%3D%3D'
     }),
 
-
-
-
-
-
-
   ]
 }
 

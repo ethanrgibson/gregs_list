@@ -57,7 +57,7 @@ export class House {
             </div>
           </div>
           <div class="text-end">
-              <button onclick="app.housesController.deleteHouseListing(${this.id})" class="btn btn-outline-danger" type="button">
+              <button onclick="app.housesController.deleteHouseListing('${this.id}')" class="btn btn-outline-danger" type="button">
                 Sell House
               </button>
             </div>
