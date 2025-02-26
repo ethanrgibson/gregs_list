@@ -39,28 +39,29 @@ export class House {
 
 <div class="col-md-12">
           <div class="shadow bg-light d-flex mb-4">
-            <img
-              src="${this.imgUrl}"
-              alt="${this.year} ${this.sqft}" class="car-img">
-            <div class="p-3 flex-grow-1">
-              <h3>Built: ${this.year} / SQFT: ${this.sqft} </h3>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <p class="fs-3">${this.currencyForPrice} </p>
-                  <p class="text-capitalize" >${this.description}.</p>
-                </div>
-                <div class="fs-5">
-                  <p>${this.bedrooms} Bedrooms</p>
-                  <p>${this.bathrooms} Bathrooms</p>
-                </div>
-              </div>
+          <div class="p-3 flex-grow-1">
+          <h3>Built: ${this.year} / SQFT: ${this.sqft} </h3>
+          <div class="d-flex justify-content-between">
+          <div>
+          <p class="fs-3">${this.currencyForPrice} </p>
+          <p class="text-capitalize" >${this.description}.</p>
+          <div class="text-start">
+          <button onclick="app.housesController.deleteHouseListing('${this.id}')" class="btn btn-outline-danger" type="button">
+            Sell House
+          </button>
+        </div>
+          </div>
+          <div class="fs-5">
+          <p>${this.bedrooms} Bedrooms</p>
+          <p>${this.bathrooms} Bathrooms</p>
+          </div>
+          <img
+            src="${this.imgUrl}"
+            alt="${this.year} ${this.sqft}" class="car-img">
+          </div>
             </div>
           </div>
-          <div class="text-end">
-              <button onclick="app.housesController.deleteHouseListing('${this.id}')" class="btn btn-outline-danger" type="button">
-                Sell House
-              </button>
-            </div>
+          
         </div>
 
 `;

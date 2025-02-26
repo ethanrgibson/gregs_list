@@ -14,6 +14,7 @@ class HouseService {
 
     house.push(newHouse)
 
+    this.saveHouses()
   }
 
 
@@ -34,17 +35,19 @@ class HouseService {
 
   loadHouse() {
 
-    const loadHouses = loadState('houses', [House])
+    const loadHousesFromLocalStorage = loadState('houses', [House])
+
+    if (loadHousesFromLocalStorage == 0) {
+      AppState.emit('houses')
+      return
+    }
+
+    AppState.houses = loadHousesFromLocalStorage
 
   }
 
 
 }
-
-
-
-
-
 
 
 export const houseService = new HouseService()

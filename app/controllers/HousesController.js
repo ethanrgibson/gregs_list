@@ -12,7 +12,7 @@ export class HousesController {
     console.log("live from house controller")
 
 
-    this.drawHouseCards()
+    houseService.loadHouse()
   }
 
 

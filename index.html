@@ -163,7 +163,7 @@
               </div>
               <div class="mb-3">
                 <label for="howManyBathrooms">Bathrooms</label>
-                <input id="howManyBathrooms" name="bathrooms" type="number" required maxlength="20"
+                <input id="howManyBathrooms" name="bathrooms" type="number" step="0.1" required maxlength="20"
                   placeholder="How many bathrooms...">
               </div>
               <div class="mb-3">
@@ -208,32 +208,33 @@
 
     <section class="container">
       <div id="houseCards" class="row">
-        <!-- STUB House Card -->
+        <!-- STUB House Card
         <div class="col-md-12">
           <div class="shadow bg-light d-flex mb-4">
-            <img
-              src="https://i0.wp.com/www.terrain.org/wp-content/uploads/2012/12/ruins_livingstone_house.jpg?resize=400,316&ssl=1"
-              alt="run down house" class="car-img">
             <div class="p-3 flex-grow-1">
-              <h3>Built: 1900 / SQFT: 45000 </h3>
+              <h3>Built: ${this.year} / SQFT: ${this.sqft} </h3>
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="fs-3">$375000</p>
-                  <p>Mostly old, fairly smelly, and really liveable (for the most part).</p>
+                  <p class="fs-3">${this.currencyForPrice} </p>
+                  <p class="text-capitalize">${this.description}.</p>
+                  <div class="text-start">
+                    <button onclick="app.housesController.deleteHouseListing('${this.id}')"
+                      class="btn btn-outline-danger" type="button">
+                      Sell House
+                    </button>
+                  </div>
                 </div>
                 <div class="fs-5">
-                  <p>6 Bedrooms</p>
-                  <p>10 Bathrooms</p>
+                  <p>${this.bedrooms} Bedrooms</p>
+                  <p>${this.bathrooms} Bathrooms</p>
+                </div>
+                <div>
+                  <img src="${this.imgUrl}" alt="${this.year} ${this.sqft}" class="car-img">
                 </div>
               </div>
             </div>
-            <div>
-              <button onclick="" class="btn btn-outline-danger" type="button">
-                Delete Car
-              </button>
-            </div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     </section>
