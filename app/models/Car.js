@@ -89,29 +89,3 @@ export class Car {
 
 
 
-export class House {
-  /**
-   * @param {{ 
-   * year: number; 
-   * bedrooms: number; 
-   * bathrooms: number; 
-   * sqft: number; 
-   * price: number; 
-   * description: string;
-   * imgUrl: string; }} data
-   */
-  constructor(data) {
-    this.id = generateId()
-    this.year = data.year
-    this.bedrooms = data.bedrooms
-    this.bathrooms = data.bathrooms
-    this.sqft = data.sqft
-    this.price = data.price
-    this.description = data.description
-    this.imgUrl = data.imgUrl
-  }
-}
-
-
-// new Car('toyota', 'camry') wack
-// new Car({ make: 'toyota', model: 'camry' }) dope

@@ -1,4 +1,5 @@
-import { Car, House } from './models/Car.js'
+import { Car } from './models/Car.js'
+import { House } from "./models/House.js"
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -68,18 +69,7 @@ class ObservableAppState extends EventEmitter {
       description: 'mostly old, fairly smelly, and really liveable (for the most part)',
       imgUrl: 'https://i0.wp.com/www.terrain.org/wp-content/uploads/2012/12/ruins_livingstone_house.jpg?resize=400,316&ssl=1'
     }),
-
-
-
-
-
   ]
-
-
-
-
-
-
 }
 
 
