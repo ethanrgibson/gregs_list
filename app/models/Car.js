@@ -55,7 +55,7 @@ export class Car {
 
   get cardHTMLTemplate() {
     return `
-     <div class="col-12">
+    <div class="col-12">
       <div class="shadow bg-light d-flex mb-4">
         <img src="${this.imgUrl}" alt="${this.make} ${this.model}" class="car-img">
         <div class="p-3 flex-grow-1">
@@ -86,6 +86,31 @@ export class Car {
     `
   }
 }
+
+
+
+export class House {
+  /**
+   * @param {{ year: number; 
+   * bedrooms: number; 
+   * bathrooms: number; 
+   * sqft: number; 
+   * price: number; 
+   * description: string; i
+   * imgUrl: string; }} data
+   */
+  constructor(data) {
+    this.id = generateId()
+    this.year = data.year
+    this.bedrooms = data.bedrooms
+    this.bathrooms = data.bathrooms
+    this.sqft = data.sqft
+    this.price = data.price
+    this.description = data.description
+    this.imgUrl = data.imgUrl
+  }
+}
+
 
 // new Car('toyota', 'camry') wack
 // new Car({ make: 'toyota', model: 'camry' }) dope
